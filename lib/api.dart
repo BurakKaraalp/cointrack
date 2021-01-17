@@ -29,14 +29,4 @@ class Api {
     List<Coin> coinlist = parseCoin("[" + responseBody + "]");
     return coinlist;
   }
-
-  /*Object fetchPrice() async {
-    var futureCoin = await Api().fetchCoin();
-    futureCoin.forEach((element) async {
-      var id = element.id;
-      final response = await http.get(
-          "https://api.coingecko.com/api/v3/simple/price?ids=$id&vs_currencies=try,usd");
-      return response;
-    });
-  }*/
 }
